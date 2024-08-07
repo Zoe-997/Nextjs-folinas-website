@@ -33,7 +33,9 @@ export async function generateMetadata() {
 export default async function Home() {
   return (
     <>
-      <BannerTop />
+      <div className="mb-20 md:mb-0">
+        <BannerTop />
+      </div>
       <div className="pb-10 md:py-10">
         <Culture />
       </div>

@@ -52,14 +52,14 @@ const BoardMember = ({}: BoardMemberProps) => {
           heading="Board member"
           className={`${isIntersecting ? "animate__fadeInUp" : ""}`}
         />
-        <div className="flex flex-wrap -mx-[1.5rem] justify-center">
+        <div className="grid grid-cols-2 md:grid-cols-6 gap-5">
           {members?.map((item: any, index: number) => (
             <div
               key={item.id}
-              className={`px-[1.5rem] mb-10 md:mb-20 ${
-                index === 0 && "w-full md:w-2/5 md:"
-              } ${index === 1 && "w-1/2 md:w-2/5"} ${
-                index !== 0 && index !== 1 && "w-1/2 md:w-1/3"
+              className={`mb-10 md:mb-20 ${
+                index === 0 && "col-span-2 md:col-span-3"
+              } ${index === 1 && "col-span-1 md:col-span-3"} ${
+                index !== 0 && index !== 1 && "col-span-1 md:col-span-2"
               } text-center${isIntersecting ? " animate__fadeInUp" : ""}`}
             >
               {item?.attributes?.Avartar?.data?.attributes && (
