@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Ferrari medium";
+    src:
+      url("./Ferrari-SansMedium.woff2") format("woff2");
+};
+
+@font-face {
+    font-family: "Ferrari";
+    src:
+      url("./Ferrari-SansRegular.woff2") format("woff2");
+};  
