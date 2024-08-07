@@ -9,10 +9,10 @@ import { useSingleTypesStores } from "@/app/apis/stores/singleTypesStores";
 import { getImageURL } from "@/app/libs/function";
 import { initialResponsive } from "@/app/libs/carousel";
 
-import Container from "../Commons/Container";
-import Richtext from "../Commons/RichText";
+import Container from "@/app/components/Commons/Container";
+import Richtext from "@/app/components/Commons/RichText";
 
-import LogoImage from "../../../public/images/logo.png";
+import LogoImage from "@/public/images/logo.png";
 
 const BannerTop = () => {
   const [bannerTopList, setBannerTopList] = useState<any>([]);
@@ -47,7 +47,7 @@ const BannerTop = () => {
       >
         <div
           className={`z-[1] relative ${
-            active ? "w-[50px] h-[50px]" : "w-[30px] h-[30px]"
+            active ? "w-[50px] h-[50px]" : "w-[30px] h-[30;px]"
           } overflow-hidden transition-all duration-500 cursor-pointer mx-auto`}
           onClick={() => onClick()}
         >
@@ -74,7 +74,6 @@ const BannerTop = () => {
 
   return (
     <div className="relative overflow-hidden">
-      {/* {loading && <SectionLoading />} */}
       {bannerTopList.length > 0 && (
         <Carousel
           arrows={false}
