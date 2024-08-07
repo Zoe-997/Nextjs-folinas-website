@@ -12,7 +12,7 @@ const BlogContent = () => {
   };
 
   return (
-    <div className="flex flex-wrap py-10">
+    <div className="flex flex-wrap md:py-10">
       <Sidebar>
         <BlogSideBar handleBlogs={handleBlogsList} />
       </Sidebar>
