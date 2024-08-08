@@ -47,7 +47,7 @@ const BannerTop = () => {
       >
         <div
           className={`z-[1] relative ${
-            active ? "w-[50px] h-[50px]" : "w-[30px] h-[30;px]"
+            active ? "w-[50px] h-[50px]" : "w-[30px] h-[30px]"
           } overflow-hidden transition-all duration-500 cursor-pointer mx-auto`}
           onClick={() => onClick()}
         >
